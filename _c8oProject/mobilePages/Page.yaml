@@ -1,0 +1,230 @@
+↑isRoot: true
+comment: My First Page as root page
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-xfirst
+title: First page
+↓Header [ngx.components.UIDynamicElement-1491634212350]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓BackButton [ngx.components.UIDynamicElement-1643993281257]: 
+        beanData: '{"ionBean":"BackButton"}'
+        tagName: ion-back-button
+      ↓MenuButton [ngx.components.UIDynamicElement-1588172846908]: 
+        beanData: '{"ionBean":"MenuButton"}'
+        tagName: ion-menu-button
+    ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [ngx.components.UIText-1491634275121]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Page
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1588170817806]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Icon [ngx.components.UIDynamicElement-1588170831166]: 
+          beanData: |
+            '{
+             "ionBean": "Icon",
+             "IconName": "plain:ellipsis-vertical",
+             "IconMdName": "plain",
+             "IconIosName": "plain"
+            }'
+          tagName: ion-icon
+↓Content [ngx.components.UIDynamicElement-1489674805352]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓InputGrid [ngx.components.UIDynamicElement-1700139070694]: 
+    beanData: '{"ionBean":"Grid","Height":"plain"}'
+    tagName: ion-grid
+    ↓GridRow [ngx.components.UIDynamicElement-1700139070681]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [ngx.components.UIDynamicElement-1700139070683]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓ShowMovies [ngx.components.UIDynamicElement-1700129219657]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: ion-button
+          ↓Label [ngx.components.UIDynamicElement-1700129219652]: 
+            beanData: '{"ionBean":"Label"}'
+            tagName: ion-label
+            ↓some_text [ngx.components.UIText-1700129219654]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Show Movies
+          ↓attr [ngx.components.UIControlEvent-1700129219656]: 
+            ↓CallSequence [ngx.components.UIDynamicAction-1700129312332]: 
+              beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:MovieDBBackend.SearchMoviesByTitle"}'
+              tagName: CallSequence
+              ↓title [ngx.components.UIControlVariable-1700129438706]: 
+                comment: new variable
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Local","project":"MovieDBMainApp","input":"","model":{"data":[{"localObject":"local"}],"path":"?.titleMovie","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓Button [ngx.components.UIDynamicElement-1700148050661]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: ion-button
+          ↓Label [ngx.components.UIDynamicElement-1700148050656]: 
+            beanData: '{"ionBean":"Label"}'
+            tagName: ion-label
+            ↓some_text [ngx.components.UIText-1700148050658]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Login
+          ↓attr [ngx.components.UIControlEvent-1700148050660]: 
+            ↓CallSequence [ngx.components.UIDynamicAction-1700148080181]: 
+              beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:MovieDBBackend.Login"}'
+              tagName: CallSequence
+              ↓Username [ngx.components.UIControlVariable-1700148110882]: 
+                comment: new variable
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:admin
+              ↓Password [ngx.components.UIControlVariable-1700148110884]: 
+                comment: new variable
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:admin
+      ↓GridCol1 [ngx.components.UIDynamicElement-1700139070689]: 
+        beanData: '{"ionBean":"GridCol","Size":"plain:4"}'
+        tagName: ion-col
+        ↓InputBox [ngx.components.UIDynamicElement-1700138959472]: 
+          beanData: '{"ionBean":"GenericItem"}'
+          tagName: ion-item
+          ↓Label [ngx.components.UIDynamicElement-1700138959469]: 
+            beanData: '{"ionBean":"Label"}'
+            tagName: ion-label
+            ↓some_text [ngx.components.UIText-1700138959471]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Movie Title :
+          ↓TitleInput [ngx.components.UIDynamicElement-1700129289743]: 
+            beanData: |
+              '{
+               "ionBean": "Input",
+               "ControlName": "plain:name1700129289743",
+               "DoubleBinding": "source:{\"filter\":\"Local\",\"project\":\"TutorialFront2\",\"input\":\"\",\"model\":{\"data\":[{\"localObject\":\"local\"}],\"path\":\"?.titleMovie\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}",
+               "Debounce": "plain:0"
+              }'
+            tagName: ion-input
+  ↓Grid [ngx.components.UIDynamicElement-1700131235745]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [ngx.components.UIDynamicElement-1700131235732]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓tag [ngx.components.UIControlDirective-1700130066249]: 
+        directiveIndexName: idx
+        directiveItemName: item
+        directiveSource: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Sequence","project":"MovieDBMainApp","input":"","model":{"data":[{"sequence":"TutorielMovieDB.SearchMoviesByTitle","marker":""}],"path":"?.movies","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓GridCol [ngx.components.UIDynamicElement-1700131235734]: 
+          beanData: '{"ionBean":"GridCol","Size":"plain:4"}'
+          tagName: ion-col
+          ↓tag [ngx.components.UIUseShared-1700130154088]: 
+            sharedcomponent: FrontComponentLibrary.Application.NgxApp.MovieCard
+            ↓imgUrl [ngx.components.UIUseVariable-1700130208000]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"MovieDBMainApp","input":"","model":{"data":[{"priority":1700130066249}],"path":"?.img_path","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓title [ngx.components.UIUseVariable-1700130208002]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"MovieDBMainApp","input":"","model":{"data":[{"priority":1700130066249}],"path":"?.upperCaseTitle","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓overview [ngx.components.UIUseVariable-1700132156773]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"MovieDBMainApp","input":"","model":{"data":[{"priority":1700130066249}],"path":"?.overview","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓release_date [ngx.components.UIUseVariable-1700132156775]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"MovieDBMainApp","input":"","model":{"data":[{"priority":1700130066249}],"path":"?.release_date","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [ngx.components.UIDynamicElement-1491634317538]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [ngx.components.UIDynamicElement-1588170246138]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓Button1 [ngx.components.UIDynamicElement-1491634332730]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Text [ngx.components.UIText-1491634340354]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588170269871]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button2 [ngx.components.UIDynamicElement-1491634376874]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Text [ngx.components.UIText-1491634383107]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1700139286048]: 
+  ↓SetLocal [ngx.components.UIDynamicAction-1700139346028]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:titleMovie",
+       "Value": "script:''''"
+      }'
+    tagName: SetLocal
+    ↓initTitle [ngx.components.UICustomAction-1700139523599]: 
+      actionValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+              		
+              		page.local.titleMovie = page.local.titleMovie + ''Avatar'';
+              		
+              		resolve("Mon super film est : " + page.local.titleMovie);
+              '
